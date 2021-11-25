@@ -47,7 +47,7 @@ export default {};
       display: flex;
       flex-direction: row;
       li {
-        padding: 0 1rem 0 0;
+        padding: 0 2.1rem;
         list-style: none;
         a {
           color: black;
@@ -75,9 +75,9 @@ export default {};
       border-radius: 50%;
       padding: 0.1rem;
       position: absolute;
-      right: 20.8%;
+      right: 18.8%;
       top: 3.5%;
-      transform: translate(-100%, 25%);
+      transform: translate(50%, 25%);
       font-size: 12px;
       span {
         margin: 1px;
