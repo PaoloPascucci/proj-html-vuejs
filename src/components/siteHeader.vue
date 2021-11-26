@@ -69,13 +69,13 @@ export default {};
       }
     }
     .number {
-      background-color: rgb(55, 125, 255);
+      background-color: #377dff;
       color: white;
       width: fit-content;
       border-radius: 50%;
       padding: 0.1rem;
       position: absolute;
-      right: 18.8%;
+      right: 23.8%;
       top: 3.5%;
       transform: translate(50%, 25%);
       font-size: 12px;
@@ -87,13 +87,14 @@ export default {};
   }
   .button {
     margin: 4px 0;
-    .get_started {
-      background-color: rgb(55, 125, 255);
+  .get_started {
+      background-color: #377dff;
       color: white;
       border: none;
       padding: 1rem;
       border-radius: 5px;
     }
+  
   }
 }
 </style>

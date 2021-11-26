@@ -37,5 +37,8 @@ export default {
 }
 body{
   font-family: 'Spartan', sans-serif;
+  width:80%;
+  margin: auto  ;
+
 }
 </style>

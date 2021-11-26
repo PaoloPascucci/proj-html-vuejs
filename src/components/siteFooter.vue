@@ -45,8 +45,8 @@ export default {};
 .footer {
   display: flex;
   flex-direction: row;
-  width: 75%;
-  margin: auto;
+  width: 85%;
+  margin:auto;
 }
 .Sx_Footer {
     display:flex;
