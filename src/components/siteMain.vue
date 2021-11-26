@@ -13,7 +13,73 @@
         <img src="../assets/508.jpeg" alt="" />
       </div>
     </section>
-    <section></section>
+    <section class="content">
+      <div class="container">
+        <div class="Cont">
+          <div class="Cont_Up">
+            <div class="pc">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="pc_text">
+              <h3>Online Marketing</h3>
+              <p>
+                It is a long established fact that a reader will be distracted.
+              </p>
+            </div>
+          </div>
+          <div class="Cont_Down">
+            <ul>
+              <li><i class="fas fa-check"></i> SEO</li>
+              <li><i class="fas fa-check"></i> SEM</li>
+              <li><i class="fas fa-check"></i> Website Strategy</li>
+              <li><i class="fas fa-check"></i> Social management</li>
+            </ul>
+          </div>
+        </div>
+        <div class="Cont">
+          <div class="Cont_Up">
+            <div class="pc">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="pc_text">
+              <h3>Online Marketing</h3>
+              <p>
+                It is a long established fact that a reader will be distracted.
+              </p>
+            </div>
+          </div>
+          <div class="Cont_Down">
+            <ul>
+              <li><i class="fas fa-check"></i> SEO</li>
+              <li><i class="fas fa-check"></i> SEM</li>
+              <li><i class="fas fa-check"></i> Website Strategy</li>
+              <li><i class="fas fa-check"></i> Social management</li>
+            </ul>
+          </div>
+        </div>
+        <div class="Cont">
+          <div class="Cont_Up">
+            <div class="pc">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="pc_text">
+              <h3>Online Marketing</h3>
+              <p>
+                It is a long established fact that a reader will be distracted.
+              </p>
+            </div>
+          </div>
+          <div class="Cont_Down">
+            <ul>
+              <li><i class="fas fa-check"></i> SEO</li>
+              <li><i class="fas fa-check"></i> SEM</li>
+              <li><i class="fas fa-check"></i> Website Strategy</li>
+              <li><i class="fas fa-check"></i> Social management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <section></section>
     <section></section>
     <section></section>
@@ -29,7 +95,7 @@ export default {};
 .hero {
   display: flex;
   flex-direction: row;
-  background-color: #F2F7FF;
+  background-color: #f2f7ff;
   height: 450px;
   .hero_text {
     display: flex;
@@ -62,6 +128,48 @@ export default {};
       bottom: 165px;
       right: 0;
       transform: translate(50%, 50%);
+    }
+  }
+}
+.content {
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+    .Cont_Up {
+      display: flex;
+      flex-direction: row;
+      .pc {
+        .fa-desktop {
+          padding: 0.7rem;
+          background-color: #377dff;
+          border: solid 7px white;
+          border-radius: 50%;
+          color: white;
+          box-shadow: 0px 3px 8px #377dff;
+          margin-right: 2.5rem;
+        }
+      }
+      .pc_text{
+        p{
+          padding-top: 1rem;
+          width: 80%;
+          line-height: 30px;
+        }
+      }
+    }
+    .Cont_Down {
+      ul {
+        margin-left: 5rem;
+        li {
+          list-style: none;
+          font-weight: bold;
+          .fa-check {
+            color: #377dff;
+            margin: 1rem;
+          }
+        }
+      }
     }
   }
 }
