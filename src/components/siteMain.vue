@@ -132,14 +132,78 @@
           <button class="Explore">Explore more Feature</button>
         </div>
         <div class="f_info">
-          <div class="card">Customized Invoices <i class="flaticon flaticon-growth"></i> </div>
-          <div class="card">Stock Management</div>
-          <div class="card">Receivable e Payables</div>
-          <div class="card">Manage Buying</div>
-          <div class="card">Powerful e Secure</div>
-          <div class="card">Fastest Return Filing</div>
-          <div class="card">Monthly Detailed</div>
-          <div class="card">Product Management</div>
+          <div class="card C_1">
+            <h4>Customized Invoices</h4>
+            <img
+              class="blue"
+              src="../assets/growth.png"
+              alt=""
+              style="height: 50px"
+            />
+          </div>
+          <div class="card C_2">
+            <h4>Stock Management</h4>
+            <img
+              class="red"
+              src="../assets/paper-plane.png"
+              alt=""
+              style="height: 50px"
+            />
+          </div>
+          <div class="card C_3">
+            <h4>Receivable e Payables</h4>
+            <img
+              class="orange"
+              src="../assets/professional.png"
+              alt=""
+              style="height: 50px"
+            />
+          </div>
+          <div class="card C_1">
+            <h4>Manage Buying</h4>
+            <img
+              class="blue"
+              src="../assets/reward.png"
+              alt=""
+              style="height: 50px"
+            />
+          </div>
+          <div class="card C_2">
+            <h4>Powerful e Secure</h4>
+            <img
+              class="red"
+              src="../assets/business.png"
+              alt=""
+              style="height: 50px"
+            />
+          </div>
+          <div class="card C_3">
+            <h4>Fastest Return Filing</h4>
+            <img
+              class="orange"
+              src="../assets/professional.png"
+              alt=""
+              style="height: 50px"
+            />
+          </div>
+          <div class="card C_1">
+            <h4>Monthly Detailed</h4>
+            <img
+              class="blue"
+              src="../assets/document.png"
+              alt=""
+              style="height: 50px"
+            />
+          </div>
+          <div class="card C_2">
+            <h4>Product Management</h4>
+            <img
+              class="red"
+              src="../assets/thumbs-up.png"
+              alt=""
+              style="height: 50px"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -312,11 +376,59 @@ export default {};
   .f_info {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
     flex-direction: row;
     .card {
+      padding: 1rem 0 0 1rem;
       margin: 1rem;
+      width: 250px;
+      height: 150px;
+      box-shadow: 18px 18px 50px #00000014;
+      img {
+        margin-top: 10px;
+      }
     }
   }
+}
+.C_1:hover {
+  background-color: #377dff;
+  h4 {
+    color: white;
+  }
+  img {
+    filter: invert(100%) sepia(42%) saturate(0%) hue-rotate(305deg)
+      brightness(108%) contrast(101%);
+  }
+}
+.C_2:hover {
+  h4 {
+    color: white;
+  }
+  img {
+    filter: invert(100%) sepia(42%) saturate(0%) hue-rotate(305deg)
+      brightness(108%) contrast(101%);
+  }
+  background-color: #ff796d;
+}
+.C_3:hover {
+  h4 {
+    color: white;
+  }
+  img {
+    filter: invert(100%) sepia(42%) saturate(0%) hue-rotate(305deg)
+      brightness(108%) contrast(101%);
+  }
+  background-color: #ef6f31;
+}
+.blue {
+  filter: invert(51%) sepia(86%) saturate(4442%) hue-rotate(207deg)
+    brightness(101%) contrast(103%);
+}
+.red {
+  filter: invert(71%) sepia(93%) saturate(2448%) hue-rotate(314deg)
+    brightness(98%) contrast(105%);
+}
+.orange {
+  filter: invert(50%) sepia(31%) saturate(1559%) hue-rotate(338deg)
+    brightness(99%) contrast(89%);
 }
 </style>
