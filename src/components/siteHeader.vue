@@ -63,20 +63,19 @@ export default {};
 
     i {
       padding: 0 1rem;
-      .fa-shopping-cart {
-          position: relative;
-          z-index: 1;
-      }
+    }
+    i.fas.fa-shopping-cart {
+      position: relative;
+      z-index: 1;
     }
     .number {
       background-color: #377dff;
       color: white;
       width: fit-content;
       border-radius: 50%;
-      padding: 0.1rem;
       position: absolute;
       right: 23.8%;
-      top: 3.5%;
+      top: 2.2%;
       transform: translate(50%, 25%);
       font-size: 12px;
       span {
@@ -87,14 +86,13 @@ export default {};
   }
   .button {
     margin: 4px 0;
-  .get_started {
+    .get_started {
       background-color: #377dff;
       color: white;
       border: none;
       padding: 1rem;
       border-radius: 5px;
     }
-  
   }
 }
 </style>
