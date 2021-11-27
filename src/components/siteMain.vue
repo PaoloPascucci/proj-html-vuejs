@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <img class="round" src="../assets/14.png" alt="" />
     <section class="hero">
       <div class="hero_text">
         <h1>The biggest platform for your growth.</h1>
@@ -123,13 +124,15 @@
       <div class="container2">
         <div class="f_text">
           <div class="_text">
-            <h3>Populare features that oyur business needs</h3>
+            <h3>Populare features that your business needs</h3>
             <p>
               Faff about only a quid blower i don't want no agro bleeding
               chimney pot burke tosser cras nice boot fanny.!
             </p>
           </div>
-          <button class="Explore">Explore more Feature</button>
+          <div class="_butt">
+            <button class="Explore">Explore more Feature</button>
+          </div>
         </div>
         <div class="f_info">
           <div class="card C_1">
@@ -356,13 +359,24 @@ export default {};
 .features {
   width: 80%;
   margin: auto;
+  position: relative;
   .f_text {
     display: flex;
+    margin: 50px 0;
     ._text {
+      h3 {
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
       p {
         width: 65%;
         line-height: 30px;
       }
+    }
+    ._butt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .Explore {
       color: white;
@@ -430,5 +444,11 @@ export default {};
 .orange {
   filter: invert(50%) sepia(31%) saturate(1559%) hue-rotate(338deg)
     brightness(99%) contrast(89%);
+}
+.round {
+  position: absolute;
+  top: 205%;
+  left: 0%;
+  transform: translate(-50%, -50%);
 }
 </style>
