@@ -120,7 +120,28 @@
       </div>
     </section>
     <section class="features">
-
+      <div class="container2">
+        <div class="f_text">
+          <div class="_text">
+            <h3>Populare features that oyur business needs</h3>
+            <p>
+              Faff about only a quid blower i don't want no agro bleeding
+              chimney pot burke tosser cras nice boot fanny.!
+            </p>
+          </div>
+          <button class="Explore">Explore more Feature</button>
+        </div>
+        <div class="f_info">
+          <div class="card">Customized Invoices <i class="flaticon flaticon-growth"></i> </div>
+          <div class="card">Stock Management</div>
+          <div class="card">Receivable e Payables</div>
+          <div class="card">Manage Buying</div>
+          <div class="card">Powerful e Secure</div>
+          <div class="card">Fastest Return Filing</div>
+          <div class="card">Monthly Detailed</div>
+          <div class="card">Product Management</div>
+        </div>
+      </div>
     </section>
     <section></section>
     <section></section>
@@ -225,7 +246,7 @@ export default {};
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+
     .sx {
       display: flex;
       flex-direction: column;
@@ -236,35 +257,65 @@ export default {};
         font-size: 30px;
         line-height: 60px;
       }
-      .weird{
+      .weird {
         line-height: 30px;
       }
       .card {
         display: flex;
         flex-direction: row;
         padding: 1rem;
-        p{
+        p {
           line-height: 35px;
         }
-        .img{
+        .img {
           margin-right: 1rem;
           display: flex;
           justify-content: center;
           align-items: center;
-          
-          img{
+
+          img {
             width: 70px;
             height: 79px;
           }
         }
       }
-      .Report{
-          margin-top: 1rem;
-          box-shadow: 18px 18px 50px  #00000014;
-        }
+      .Report {
+        margin-top: 1rem;
+        box-shadow: 18px 18px 50px #00000014;
+      }
     }
-    .dx{
+    .dx {
       margin-top: 1px;
+    }
+  }
+}
+.features {
+  width: 80%;
+  margin: auto;
+  .f_text {
+    display: flex;
+    ._text {
+      p {
+        width: 65%;
+        line-height: 30px;
+      }
+    }
+    .Explore {
+      color: white;
+      background-color: #377dff;
+      border: none;
+      border-radius: 5px;
+      padding: 0 1rem;
+      height: 50px;
+    }
+  }
+  .f_info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    flex-direction: row;
+    .card {
+      margin: 1rem;
     }
   }
 }
