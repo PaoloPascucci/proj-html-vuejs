@@ -1,6 +1,7 @@
 <template>
   <div class="main">
     <img class="round" src="../assets/14.png" alt="" />
+    <img class="round2" src="../assets/15.png" alt="" />
     <section class="hero">
       <div class="hero_text">
         <h1>The biggest platform for your growth.</h1>
@@ -210,7 +211,39 @@
         </div>
       </div>
     </section>
-    <section></section>
+    <section class="testimonial">
+      <h3>Our Testimonials</h3>
+      <p class="subtitle">
+        If you are planning on developing a product landing app or website, take
+        a look at this beautiful-crafted
+      </p>
+      <div class="face">
+        <div class="julia">
+          <div class="image">
+            <img src="../assets/26.jpeg" alt="Julia Aann" />
+          </div>
+          <p class="G"><strong>Julia Aann</strong> - COO Sofbox</p>
+          <p class="g">
+            At vero et accusamus et justo odio dignissimos ducimos qui
+            blanditiis praesentium vero eos et consectetur accus adip adip.
+          </p>
+        </div>
+        <div class="Mac">
+          <div class="image">
+            <img src="../assets/27.jpeg" alt="Julia Aann" />
+          </div>
+          <p class="G"><strong>Mac Znder</strong> - Manager Sofbox</p>
+          <p class="g">
+            At vero et accusamus et justo odio dignissimos ducimos qui
+            blanditiis praesentium vero eos et consectetur accus adip adip.
+          </p>
+        </div>
+      </div>
+      <div class="dot">
+        <div class="P_1"></div>
+        <div class="P_2"></div>
+      </div>
+    </section>
     <section></section>
     <section></section>
   </div>
@@ -450,5 +483,89 @@ export default {};
   top: 205%;
   left: 0%;
   transform: translate(-50%, -50%);
+}
+.round2 {
+  position: absolute;
+  top: 205%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+.testimonial {
+  margin-top: 200px;
+  position: relative;
+  h3,
+  .subtitle {
+    text-align: center;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  .subtitle {
+    width: 40%;
+    margin: auto;
+    margin-top: 2rem;
+    line-height: 30px;
+    color: #8e989f;
+  }
+  .face {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .julia,
+  .Mac {
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    height: 360px;
+    background-image: url("../assets/quotes.jpg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 18px 18px 50px #00000014;
+    .image {
+      text-align: center;
+    }
+    .G {
+      text-align: center;
+      padding-top: 2rem;
+    }
+
+    .g {
+      color: grey;
+      padding-top: 1rem;
+      line-height: 30px;
+    }
+    img {
+      border-radius: 50%;
+      border: 5px solid white;
+      height: 80px;
+      margin: 1rem;
+    }
+  }
+  .dot {
+    text-align: center;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .P_1 {
+      background-color: #377dff;
+    }
+    .P_2 {
+      background-color: black;
+    }
+    .P_1,
+    .P_2 {
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      margin: 2px;
+    }
+  }
 }
 </style>
