@@ -9,36 +9,24 @@
       <p class="copy">Copyright @ 2018 <a href="#">Sofbox</a></p>
     </div>
     <div class="Dx_Footer">
-      <ul>
-        <li class="first">Menu</li>
-        <li>About us</li>
-        <li>Theme</li>
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Blog</li>
-      </ul>
-      <ul>
-        <li class="first">About Us</li>
-        <li>About Sofbox</li>
-        <li>Roadmap</li>
-        <li>How it Work</li>
-        <li>Team</li>
-        <li>News</li>
-      </ul>
-      <ul>
-        <li class="first">Quick Links</li>
-        <li>About us</li>
-        <li>Theme</li>
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Blog</li>
-      </ul>
+      <Footerlist/>
+      <Footerlist2/>
+      <Footerlist3/>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Footerlist from "@/components/Footerlist.vue"
+import Footerlist2 from "@/components/Footerlist2.vue"
+import Footerlist3 from "@/components/Footerlist3.vue"
+export default {
+  components:{
+Footerlist,
+Footerlist2,
+Footerlist3
+  },
+}
 </script>
 
 <style lang="scss">
@@ -46,17 +34,17 @@ export default {};
   display: flex;
   flex-direction: row;
   width: 85%;
-  margin:auto;
+  margin: auto;
 }
 .Sx_Footer {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    width: 350px;
-    img{
-        height: 41px;
-        width: 117px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  img {
+    height: 41px;
+    width: 117px;
+  }
   .text,
   .copy {
     color: rgb(147, 157, 163);
@@ -64,7 +52,7 @@ export default {};
     line-height: 30px;
   }
   .copy {
-      padding-top:1rem;
+    padding-top: 1rem;
     a {
       text-decoration: none;
     }
@@ -72,9 +60,9 @@ export default {};
 }
 .Dx_Footer {
   display: flex;
-  margin-left:8rem ;
+  margin-left: 8rem;
   ul {
-    margin :0 6rem 0 5rem;
+    margin: 0 6rem 0 5rem;
     list-style: none;
     line-height: 30px;
     li {
