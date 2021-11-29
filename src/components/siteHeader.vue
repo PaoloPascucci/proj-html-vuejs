@@ -5,14 +5,8 @@
     </div>
     <div class="Dx_head">
       <div class="link">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Feature</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
+        <Headerlist/>
+        </div>
       <div class="search">
         <i class="fas fa-search"></i>
         <i class="fas fa-shopping-cart"></i>
@@ -21,12 +15,18 @@
       <div class="button">
         <button class="get_started">Get Started</button>
       </div>
-    </div>
+  </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Headerlist from "@/components/Headerlist.vue"
+export default {
+components:{
+Headerlist,
+}
+  
+};
 </script>
 
 <style lang="scss">
@@ -43,19 +43,6 @@ export default {};
   }
   .link {
     margin-top: 1.2rem;
-    ul {
-      display: flex;
-      flex-direction: row;
-      li {
-        padding: 0 2.1rem;
-        list-style: none;
-        a {
-          color: black;
-          text-decoration: none;
-          font-weight: bold;
-        }
-      }
-    }
   }
   .search {
     padding: 1rem;

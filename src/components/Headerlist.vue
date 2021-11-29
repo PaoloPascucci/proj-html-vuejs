@@ -1,27 +1,35 @@
 <template>
-<div>
-  <ul v-for="link in links" :key="link.id">
-          <li><a href="#">{{link.name}}</a></li>
-        </ul>
-      </div>
+  <div>
+    <ul class="header_list">
+      <li v-for="link in Links" :key="link.id">
+        <a href="#">{{ link }}</a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-
-
 export default {
-    data(){
-        links:[
-            {name:"Home"},
-        {name:"About Us"},
-        {name:"Feature"},
-        {name:"Testimonials"},
-        {name:"Contact Us"}
-        ]
-    }
-}
+  data() {
+    return {
+      Links: ["Home", "About Us", "Feature", "Testimonials", "Contact Us"],
+    };
+  },
+};
 </script>
 
-<style>
-
+<style lang="scss">
+.header_list {
+  display: flex;
+  flex-direction: row;
+  li {
+    padding: 0 2.1rem;
+    list-style: none;
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
 </style>
