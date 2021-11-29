@@ -244,8 +244,96 @@
         <div class="P_2"></div>
       </div>
     </section>
-    <section></section>
-    <section></section>
+    <section class="Post">
+      <div class="Ptext">
+        <h3>Latest Posts</h3>
+        <p>If you are planning on developing a product landing</p>
+      </div>
+      <div class="cont3">
+        <div class="card">
+          <div class="data">November 28, 2019</div>
+          <img src="../assets/19.jpg" alt="time" style="height: 250px" />
+          <h4>Life Lack Meaning</h4>
+          <p>
+            Its is a long established fact that a reader will be distracted by
+            the readable
+          </p>
+        </div>
+        <div class="card">
+          <div class="data">November 28, 2019</div>
+          <img src="../assets/18.jpg" alt="time" style="height: 250px" />
+          <h4>Life Lack Meaning</h4>
+          <p>
+            Its is a long established fact that a reader will be distracted by
+            the readable
+          </p>
+        </div>
+        <div class="card">
+          <div class="data">November 28, 2019</div>
+          <img src="../assets/17.jpg" alt="time" style="height: 250px" />
+          <h4>Life Lack Meaning</h4>
+          <p>
+            Its is a long established fact that a reader will be distracted by
+            the readable
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="Contacts">
+      <div class="text">
+        <h3>Contact with our team</h3>
+        <p>if you are planning on developing a product landing.</p>
+      </div>
+      <div class="cont4">
+        <div class="image">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6304.829986131271!2d-122.4746968033092!3d37.80374752160443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586e6302615a1%3A0x86bd130251757c00!2sStorey+Ave%2C+San+Francisco%2C+CA+94129!5e0!3m2!1sen!2sus!4v1435826432051"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0px; pointer-events: none"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+        <div class="info_contact">
+          <img src="../assets/35.png" alt="logo" style="height: 50px" />
+          <h4>9840 Shore St. Fond Du Lac, Wi 54935</h4>
+          <p>0 1223 456 789</p>
+          <p>mail@sofbox.com</p>
+          <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <h4 id="touch">Get in Touch</h4>
+          <div class="text_area_info">
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Your subject"
+            />
+            <textarea
+              name="name"
+              id="name"
+              cols="52"
+              rows="15"
+              placeholder="Your Message"
+            ></textarea>
+            <button>Send Message</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
   </div>
 </template>
 
@@ -281,6 +369,9 @@ export default {};
       border: none;
       width: 100px;
       border-radius: 5px;
+      &:hover {
+        background-color: #1e1e1e;
+      }
     }
   }
   .hero_image {
@@ -418,6 +509,9 @@ export default {};
       border-radius: 5px;
       padding: 0 1rem;
       height: 50px;
+      &:hover {
+        background-color: #1e1e1e;
+      }
     }
   }
   .f_info {
@@ -565,6 +659,123 @@ export default {};
       width: 10px;
       border-radius: 5px;
       margin: 2px;
+    }
+  }
+}
+.Post {
+  .Ptext {
+    text-align: center;
+    margin-top: 200px;
+    h3 {
+      font-size: 40px;
+    }
+    h3,
+    p {
+      margin: 1rem;
+    }
+    p {
+      color: #8e989f;
+    }
+  }
+  .cont3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .data {
+    position: absolute;
+    top: 7.5%;
+    left: 7.5%;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #8e989f;
+  }
+  .card {
+    position: relative;
+    border: 1px solid #00000014;
+    padding: 1rem;
+    margin: 1rem;
+    width: 27%;
+    h4,
+    p {
+      margin: 1rem;
+      line-height: 30px;
+    }
+    p {
+      color: #8e989f;
+    }
+  }
+}
+.Contacts {
+  margin-top: 200px;
+  .text {
+    text-align: center;
+    h3 {
+      font-size: 30px;
+      margin: 1rem;
+    }
+    p {
+      margin: 1rem;
+      color: #8e989f;
+    }
+  }
+  .cont4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    .image {
+      display: flex;
+      align-self: flex-start;
+    }
+    #touch {
+      font-size: 20px;
+    }
+  }
+  .info_contact {
+    margin-left: 1rem;
+    padding: 1rem;
+    line-height: 40px;
+  }
+  .fab {
+    color: #377dff;
+    margin: 3rem 0.3rem;
+    padding: 1rem;
+    border: 1px solid #00000014;
+    border-radius: 5px;
+  }
+  .text_area_info {
+    display: flex;
+    width: 465px;
+    flex-wrap: wrap;
+
+    input {
+      margin: 1rem 1rem 1rem 0;
+      padding: 1rem;
+      width: 200px;
+      border: 1px solid #00000014;
+    }
+    #subject {
+      width: inherit;
+    }
+    textarea {
+      padding: 1rem;
+      border: 1px solid #00000014;
+    }
+    button {
+      margin: 2rem 0rem;
+      padding: 1rem;
+      background-color: #377dff;
+      color: white;
+      border: none;
+      width: 150px;
+      border-radius: 5px;
+      &:hover {
+        background-color: #1e1e1e;
+      }
     }
   }
 }
