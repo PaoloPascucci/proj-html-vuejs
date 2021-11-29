@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <img class="round" src="../assets/14.png" alt="" />
-    <img class="round2" src="../assets/15.png" alt="" />
+    <!-- <img class="round2" src="../assets/15.png" alt="" /> -->
     <section class="hero">
       <div class="hero_text">
         <h1>The biggest platform for your growth.</h1>
@@ -332,8 +332,9 @@
           </div>
         </div>
       </div>
-      <hr />
+      
     </section>
+    <hr />
   </div>
 </template>
 
@@ -778,5 +779,10 @@ export default {};
       }
     }
   }
+}
+hr{
+margin: 0 -12rem;
+    width: 1904px;
+    color: #8e989f;
 }
 </style>

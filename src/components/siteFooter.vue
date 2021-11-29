@@ -74,7 +74,7 @@ export default {};
   display: flex;
   margin-left:8rem ;
   ul {
-    margin :0 7rem 0 5rem;
+    margin :0 6rem 0 5rem;
     list-style: none;
     line-height: 30px;
     li {
